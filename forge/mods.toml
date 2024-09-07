@@ -1,13 +1,13 @@
 modLoader = "javafml"
 loaderVersion = "[@LOADER_MAJOR@,)"
-issueTrackerURL = "https://github.com/Luke100000/Man-of-Many-Planes/issues"
-license = "GPL-3.0-only"
+issueTrackerURL = "https://github.com/Loreb29/nuke-bay/issues"
+license = "MIT"
 
 [[mods]]
 modId = "nuke_bay"
 version = "${version}"
 displayName = "Nuclear Bomb Bay"
-displayURL = "https://www.curseforge.com/minecraft/mc-mods/man-of-many-planes"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/nuclear-bomb-bay"
 authors = "Lorez"
 description = "A custom Bomb Bay for Nukes"
 logoFile = "icon.png"
