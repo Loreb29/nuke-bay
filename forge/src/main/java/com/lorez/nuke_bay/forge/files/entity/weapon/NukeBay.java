@@ -13,20 +13,26 @@ import immersive_aircraft.entity.misc.WeaponMount;
 import immersive_aircraft.entity.weapons.BombBay;
 import immersive_aircraft.entity.weapons.BulletWeapon;
 import immersive_aircraft.network.c2s.FireMessage;
+import immersive_aircraft.network.s2c.FireResponse;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.phys.Vec3;
 import org.joml.Matrix3f;
 import org.joml.Vector3f;
 import org.joml.Vector4f;
 import org.slf4j.Logger;
 
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Random;
 
 public class NukeBay extends BulletWeapon {
     private static final float MAX_COOLDOWN = 1.0F;
     private float cooldown = 0.0F;
-
+    private Random randomn= new Random();
 
     public NukeBay(VehicleEntity entity, ItemStack stack, WeaponMount mount, int slot) {
         super(entity, stack, mount, slot);
@@ -56,13 +62,12 @@ public class NukeBay extends BulletWeapon {
         this.cooldown -= 0.05F;
 
     }
-
+    @Override
     public void fire(Vector3f direction) {
         if (this.spentAmmo(nukeBayAmmunition, 20)) {
             super.fire(direction);
 
         }
-
     }
     public Map<String, Integer> nukeBayAmmunition = Map.of("alexscaves:nuclear_bomb", 100);
     public void clientFire(int index) {

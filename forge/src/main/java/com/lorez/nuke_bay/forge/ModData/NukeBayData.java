@@ -31,7 +31,6 @@ public class NukeBayData {
     public static final String MOD_ID = "nuke_bay";
     public static Supplier<Item> NUKE_BAY_ITEM;
     public static Supplier<EntityType<TinyNuke>> TINY_NUKE;
-
     public static final Map<ResourceLocation, WeaponRegistry.WeaponConstructor> REGISTRY = new HashMap<>();
     public static void init() {
         WeaponRegistry.register(NukeBayData.locate("nuke_bay"), NukeBay::new);
