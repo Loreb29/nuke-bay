@@ -18,7 +18,7 @@ dependencies {
     forge "net.minecraftforge:forge:${rootProject.minecraft_version}-${rootProject.forge_version}"
 
     modImplementation("curse.maven:alexs-caves-924854:5633305")
-    modImplementation("curse.maven:immersive-aircraft-666014:5351805")
+    modImplementation("curse.maven:immersive-aircraft-666014:5713366")
 }
 
 processResources {
