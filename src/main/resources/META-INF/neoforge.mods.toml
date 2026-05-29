@@ -1,0 +1,42 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+issueTrackerURL = "https://github.com/Loreb29/nuke-bay/issues"
+license = "MIT"
+
+[[mods]]
+modId = "nuke_bay"
+version = "1.1"
+displayName = "Nuclear Bomb Bay"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/nuclear-bomb-bay"
+authors = "Lorez"
+description = "A custom Bomb Bay for Nukes"
+logoFile = "icon.png"
+itemIcon = "nuke_bay:nuke_bay"
+
+[[dependencies.nuke_bay]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.nuke_bay]]
+modId = "neoforge"
+mandatory = true
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.nuke_bay]]
+modId = "immersive_aircraft"
+mandatory = true
+versionRange = "[1.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.nuke_bay]]
+modId = "alexscaves"
+mandatory = true
+versionRange = "[2.0.3,)"
+ordering = "NONE"
+side = "BOTH"
